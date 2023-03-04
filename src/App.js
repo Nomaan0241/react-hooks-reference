@@ -1,10 +1,11 @@
 import UseStateHook from "./allHooks/UseStateHook";
 import UseEffectHook from "./allHooks/UseEffectHook";
-
+import UseMemoHook from "./allHooks/UseMemoHook";
 function App() {
 	return (
 		<div className="App">
-			<UseEffectHook />
+			<UseMemoHook />
+			{/* <UseEffectHook /> */}
 			{/* <UseStateHook /> */}
 		</div>
 	);
