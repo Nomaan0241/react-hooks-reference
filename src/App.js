@@ -5,6 +5,8 @@ import UseEffectHook from "./allHooks/UseEffectHook";
 import UseMemoHook from "./allHooks/UseMemoHook";
 import UseRefHook from "./allHooks/UseRefHook";
 import UseContextHook from "./allHooks/UseContextHook";
+import UseReducerHook from "./allHooks/UseReducerHook";
+import TodosWithUseReducer from "./allHooks/useReducerAdvance/TodosWithUseReducer";
 
 //This is the context that can be used by any chile componant without extensive prop drilling.
 import { ColorProvider } from "./allHooks/useContextAdvance/ChangeColor.js";
@@ -22,22 +24,25 @@ function App() {
 	return (
 		<div>
 			{/* for Use Context Hooks */}
-			<ThemeContext.Provider value={{ darkTheme, setDarkTheme }}>
-				{/* <button onClick={toggleTheme}>Toggle Theme</button> */}
-				<UseContextHook />
-			</ThemeContext.Provider>
+			{/* <ThemeContext.Provider value={{ darkTheme, setDarkTheme }}> */}
+			{/* <button onClick={toggleTheme}>Toggle Theme</button> */}
+			{/* <UseContextHook /> */}
+			{/* </ThemeContext.Provider> */}
+
 			{/* <UseRefHook /> */}
 			{/* <UseMemoHook /> */}
 			{/* <UseEffectHook /> */}
 			{/* <UseStateHook /> */}
+			{/* <UseReducerHook /> */}
+			<TodosWithUseReducer />
 
 			{/* 
 				This is advanced version where all code is extracted and placed at one place.
 				this componant wraps all of the logic for handling our states, updating our state and pushing out
 				those diffrent values to all of our children at one place.*/}
-			<ColorProvider>
+			{/* <ColorProvider>
 				<TwoColorComponant />
-			</ColorProvider>
+			</ColorProvider> */}
 		</div>
 	);
 }
