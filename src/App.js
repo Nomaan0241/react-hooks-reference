@@ -7,6 +7,7 @@ import UseRefHook from "./allHooks/UseRefHook";
 import UseContextHook from "./allHooks/UseContextHook";
 import UseReducerHook from "./allHooks/UseReducerHook";
 import TodosWithUseReducer from "./allHooks/useReducerAdvance/TodosWithUseReducer";
+import UseCallBackHook from "./allHooks/UseCallBackHook";
 
 //This is the context that can be used by any chile componant without extensive prop drilling.
 import { ColorProvider } from "./allHooks/useContextAdvance/ChangeColor.js";
@@ -34,7 +35,8 @@ function App() {
 			{/* <UseEffectHook /> */}
 			{/* <UseStateHook /> */}
 			{/* <UseReducerHook /> */}
-			<TodosWithUseReducer />
+			{/* <TodosWithUseReducer /> */}
+			<UseCallBackHook />
 
 			{/* 
 				This is advanced version where all code is extracted and placed at one place.
